@@ -1,0 +1,23 @@
+:root {
+    --primary-bg-color: #EF961A;
+    --secondary-bg-color: #006D77;
+}
+
+* {
+    margin: 0;
+}
+
+header {
+    font-family: Carter One;
+    color: var(--primary-bg-color);
+    background-color: var(--secondary-bg-color);
+}
+
+header a {
+    /* font-family: Carter One; */
+    color: var(--primary-bg-color);
+}
+
+body {
+    background-color: var(--primary-bg-color);
+}
