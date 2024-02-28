@@ -14,11 +14,17 @@
 
 <body>
     <header>
-        <h1>Bienvenu sur Carpool IFA-MNS</h1>
-        <a href=HTML\inscription.html>inscription</a>
-        <a href=HTML\connexion.html>connexion</a>
-
+        <div class="container">
+            <div class="title">
+                <h1>Bienvenu sur Carpool IFA-MNS</h1>
+            </div>
+            <div class="connect">
+                <a href=HTML\inscription.html>inscription</a>
+                <a href=HTML\connexion.html>connexion</a>
+            </div>
+        </div>
     </header>
 </body>
+<footer></footer>
 
 </html>
