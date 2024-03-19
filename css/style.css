@@ -1,0 +1,42 @@
+:root {
+    --primary-bg-color: #EF961A;
+    --secondary-bg-color: #006D77;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+    font-family: Carter One;
+}
+
+header {
+    color: var(--primary-bg-color);
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    color: var(--primary-bg-color);
+}
+
+.login {
+    position: absolute;
+    padding-left: 15px;
+}
+
+h1 {
+    flex-grow: 1; /* Pour que le titre prenne tout l'espace disponible restant */
+    text-align: center; /* Pour centrer le texte */
+}
+
+
+footer{
+    font-family: Carter One;
+    color: var(--primary-bg-color);
+    background-color: var(--secondary-bg-color);
+}
