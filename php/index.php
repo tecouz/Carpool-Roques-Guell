@@ -1,4 +1,3 @@
-<!-- HMTL -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,9 +16,9 @@
     <header>
         <div class="login">
             <p>
-                <a href="">connexion</a>
+                <a href="connexion.php">connexion</a>
                 /
-                <a href="">inscription</a>
+                <a href="inscription.php">inscription</a>
             </p>
         </div>
         <h1>Bienvenue sur Carpool IFA-MNS</h1>

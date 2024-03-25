@@ -9,6 +9,7 @@
 }
 
 body {
+    box-sizing: border-box;
     background-color: var(--primary-bg-color);
     font-family: Carter One;
 }
@@ -32,6 +33,24 @@ header a {
 h1 {
     flex-grow: 1; /* Pour que le titre prenne tout l'espace disponible restant */
     text-align: center; /* Pour centrer le texte */
+}
+
+.button{
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-bg-color);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+
+.button:hover{
+    transform: scale(1.05);
+}
+
+.button:active{
+    transform: scale(0.95);
+    box-shadow: none;
 }
 
 

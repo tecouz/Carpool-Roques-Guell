@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/connexion.css">
+    <link rel="stylesheet" href="../css/inscription.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
@@ -15,18 +15,30 @@
 <body>
     <header>
         <div class="login">
-            <a href="inscription.php">inscription</a>
+            <a href="connexion.php">connexion</a>
         </div>
         <h1>Carpool IFA-MNS</h1>
     </header>
 
     <div class="container">
         <div class="input">
-            <label for="">Identifiant :</label>
+            <label for="">Votre nom :</label>
             <input type="text">
         </div>
         <div class="input">
-            <label for="">Mot de passe :</label>
+            <label for="">Votre prénom :</label>
+            <input type="text">
+        </div>
+        <div class="input">
+            <label for="">Votre email :</label>
+            <input type="text">
+        </div>
+        <div class="input">
+            <label for="">Votre mot de passe :</label>
+            <input type="password">
+        </div>
+        <div class="input">
+            <label for="">Vérifier votre mot de passe :</label>
             <input type="password">
         </div>
 
