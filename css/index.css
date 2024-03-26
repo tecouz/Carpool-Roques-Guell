@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  align-items: center;
+}
+.container {
+  color: var(--secondary-bg-color);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  font-size: x-large;
+  gap: 10px;
+  height: calc(100vh - 48.8px);
+}
+.Logo {
+  background-image: url("../image/Logo_Carpool_IFA_MNS.png");
+  height: 500px;
+  width: 500px;
+}
+/* .logo img {
+  height: 100%;
+  width: 100%;
+} */

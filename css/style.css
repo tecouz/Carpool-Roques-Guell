@@ -1,0 +1,64 @@
+:root {
+  --primary-bg-color: #ef961a;
+  --secondary-bg-color: #006d77;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--primary-bg-color);
+  font-family: Carter One;
+  height: 100vh;
+}
+
+header {
+  color: var(--primary-bg-color);
+  background-color: var(--secondary-bg-color);
+  display: flex;
+  align-items: center;
+}
+
+header a {
+  color: var(--primary-bg-color);
+}
+
+.login {
+  position: absolute;
+  padding-left: 15px;
+}
+
+h1 {
+  flex-grow: 1; /* Pour que le titre prenne tout l'espace disponible restant */
+  text-align: center; /* Pour centrer le texte */
+}
+.button {
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-bg-color);
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  user-select: none;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.button:active {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+
+footer {
+  font-family: Carter One;
+  color: var(--primary-bg-color);
+  background-color: var(--secondary-bg-color);
+  /* margin-top: 100vh; */
+  display: flex;
+  align-items: center;
+}
