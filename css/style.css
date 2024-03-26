@@ -36,6 +36,10 @@ h1 {
     text-align: center;
 }
 
+p{
+    margin: 20px;
+}
+
 .button{
     background-color: var(--secondary-bg-color);
     color: var(--primary-bg-color);
