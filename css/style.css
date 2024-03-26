@@ -19,6 +19,7 @@ header {
     background-color: var(--secondary-bg-color);
     display: flex;
     align-items: center;
+    height: 50px;
 }
 
 header a {
@@ -31,8 +32,8 @@ header a {
 }
 
 h1 {
-    flex-grow: 1; /* Pour que le titre prenne tout l'espace disponible restant */
-    text-align: center; /* Pour centrer le texte */
+    flex-grow: 1;
+    text-align: center;
 }
 
 .button{
@@ -41,6 +42,7 @@ h1 {
     padding: 5px;
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
     user-select: none;
 }
 

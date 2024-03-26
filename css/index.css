@@ -1,0 +1,9 @@
+.container{
+    color: var(--secondary-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    gap: 10px;
+    height: calc(100vh - 48.8px);
+}
