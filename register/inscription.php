@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="login">
-            <a href="connexion.php">connexion</a>
+            <a href="../connexion.php">connexion</a>
         </div>
         <h1>Carpool IFA-MNS</h1>
     </header>
@@ -34,7 +34,11 @@
             <input type="text">
         </div>
         <div class="input">
-            <label for="">Votre mot de passe :</label>
+            <label for="">Votre email :</label>
+            <input type="text">
+        </div>
+        <div class="input">
+            <label for="">Votre numéro de téléphone :</label>
             <input type="password">
         </div>
         <div class="input">
