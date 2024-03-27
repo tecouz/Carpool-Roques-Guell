@@ -35,6 +35,11 @@ h1 {
   flex-grow: 1; /* Pour que le titre prenne tout l'espace disponible restant */
   text-align: center; /* Pour centrer le texte */
 }
+
+p {
+  padding: 15px;
+  margin: 15px;
+}
 .button {
   background-color: var(--secondary-bg-color);
   color: var(--primary-bg-color);

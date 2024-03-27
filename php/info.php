@@ -17,13 +17,20 @@
 </header>
 
 <body>
-  <img src="../Image/Logo_Carpool_IFA_MNS.png">
-  <p>
-    Bienvenue sur Carpool IFA-MNS, une application web qui va vous permettre de faciliter l’accès a votre lieu de Formation/Travail !
-  </p>
-  <img src"">
-  <img src"">
-  <p>Vous souhaitez faire une action pour preservez nôtre planète Carpool IFA-MNS va vous y aidez en effet le covoiturage dispose d’avantage a la fois personnel et pour autrui : </p>
+  <div class="container">
+    <div class="Logo">
+      <img src='../image/Logo_Carpool_IFA_MNS'></img>
+    </div>
+    <p>
+      Bienvenue sur Carpool IFA-MNS, une application web qui va vous permettre de faciliter l’accès a votre lieu de Formation/Travail !
+    </p>
+    <div class="image-container">
+      <div class="ifaImg"><img src="../image/ifa_Metz_img.jpg"></div>
+      <div class="mnsImg"><img src="../image/mns_Metz_img.jpg"></div>
+    </div>
+    <p>Vous souhaitez faire une action pour preservez nôtre planète Carpool IFA-MNS va vous y aidez en effet le covoiturage dispose d’avantage a la fois personnel et pour autrui : </p>
+  </div>
+
 </body>
 
 </html>

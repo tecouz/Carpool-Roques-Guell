@@ -2,3 +2,33 @@ p {
   font-family: Carter One;
   color: var(--secondary-bg-color);
 }
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  width: 1200px;
+}
+.ifaImg,
+.mnsImg {
+  height: 800px;
+  width: 1200px;
+}
+
+.container {
+  color: var(--secondary-bg-color);
+
+  height: 100vh;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: x-large;
+  gap: 10px;
+  overflow: hidden;
+}
+.Logo {
+  background-image: url("../image/Logo_Carpool_IFA_MNS.png");
+  height: 500px;
+  width: 500px;
+}

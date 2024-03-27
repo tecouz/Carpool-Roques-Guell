@@ -28,7 +28,9 @@
         <div class="Logo">
             <img src='../image/Logo_Carpool_IFA_MNS'></img>
         </div>
-        <div class="button">plus d'info</div>
+        <p>Bienvenu sur carpool IFA-MNS! Vous êtes étudiants, intervenant ou employé des structures IFA-MNS et vous souhaitez faire du covoiturage pour vous rendre sur votre lieu de formation/travail carpool IFA-MNS est la pour vous proposez des trajets!</p>
+        <p> </p>
+        <div class="button" onclick="redirect()">plus d'info</div>
 
     </div>
     <footer>
@@ -38,3 +40,5 @@
 
 
 </html>
+
+<script src="../js/index.js"></script>
