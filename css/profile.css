@@ -1,0 +1,84 @@
+:root {
+    --primary-bg-color: #EF961A;
+    --secondary-bg-color: #006D77;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+    font-family: 'Carter One', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: var(--primary-bg-color);
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+}
+
+header p {
+    margin: 0;
+    padding: 0 20px;
+}
+
+header a {
+    color: var(--primary-bg-color);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    color: var(--secondary-bg-color);
+    padding: 20px;
+}
+
+.profile-section {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-section p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.profile-section img {
+    width: 100px;
+    height: 100px;
+    border: solid var(--secondary-bg-color);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.section-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-content {
+    background-color: #E5E5E5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
