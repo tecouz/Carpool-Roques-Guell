@@ -29,7 +29,6 @@ $sql = "SELECT * FROM table_preference";
 $stmt = $db->prepare($sql);
 $stmt->execute();
 $preferences = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
 ?>
 
 <!DOCTYPE html>
@@ -76,7 +75,8 @@ $preferences = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <label for="user_image">Image de profil :</label>
             <input type="file" name="user_image" id="user_image">
             <?php if (!empty($user_image)): ?>
-            <p>Image de profil actuelle : <img src="<?php echo $user_image; ?>" alt="Image de profil"></p>
+            <p>Image de profil actuelle : <img src="<?php echo $_SERVER['DOCUMENT_ROOT'] . '/upload/' . $user_image; ?>"
+                    alt="Image de profil"></p>
             <?php endif; ?>
 
             <label>Préférences :</label>

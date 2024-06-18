@@ -1,0 +1,106 @@
+/* Styles généraux */
+body {
+    font-family: 'Carter One', cursive;
+    background-color: #EF961A;
+    color: #EF961A;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles pour le formulaire de connexion */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: #006D77;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.login-container button[type="submit"] {
+    font-family: 'Carter One', cursive;
+    background-color: #EF961A;
+    color: #006D77;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-container button[type="submit"]:hover {
+    background-color: #D68000;
+}
+
+.login-container .error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Styles pour le formulaire d'inscription */
+.register-container {
+    max-width: 500px;
+    margin: 100px auto;
+    background-color: #006D77;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.register-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.register-container input[type="text"],
+.register-container input[type="tel"],
+.register-container input[type="email"],
+.register-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.register-container input[type="submit"] {
+    font-family: 'Carter One', cursive;
+    background-color: #EF961A;
+    color: #006D77;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.register-container input[type="submit"]:hover {
+    background-color: #D68000;
+}

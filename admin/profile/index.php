@@ -48,7 +48,7 @@ $avis = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
     <header>
         <p><a href="../admin/index.php">Accueil</a></p>
-        <p><a href="#info">Info</a></p>
+        <p><a href="../covoit/index.php">Covoiturage</a></p>
         <p><a href="#profile">Votre Profil</a></p>
         <h1>Profile <?php echo $_SESSION['user_name']; ?></h1>
     </header>

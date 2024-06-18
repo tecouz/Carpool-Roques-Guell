@@ -39,28 +39,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <head>
     <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/log.css">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Inscription</h1>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-        <label for="user_nom">Nom :</label>
-        <input type="text" id="user_nom" name="user_nom" required><br><br>
+    <div class="register-container">
+        <h1>Inscription</h1>
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+            <label for="user_nom">Nom :</label>
+            <input type="text" id="user_nom" name="user_nom" required><br><br>
 
-        <label for="user_prenom">Prénom :</label>
-        <input type="text" id="user_prenom" name="user_prenom" required><br><br>
+            <label for="user_prenom">Prénom :</label>
+            <input type="text" id="user_prenom" name="user_prenom" required><br><br>
 
-        <label for="user_tel">Téléphone :</label>
-        <input type="tel" id="user_tel" name="user_tel" required><br><br>
+            <label for="user_tel">Téléphone :</label>
+            <input type="tel" id="user_tel" name="user_tel" required><br><br>
 
-        <label for="user_mail">Email :</label>
-        <input type="email" id="user_mail" name="user_mail" required><br><br>
+            <label for="user_mail">Email :</label>
+            <input type="email" id="user_mail" name="user_mail" required><br><br>
 
-        <label for="user_mot_de_passe">Mot de passe :</label>
-        <input type="password" id="user_mot_de_passe" name="user_mot_de_passe" required><br><br>
+            <label for="user_mot_de_passe">Mot de passe :</label>
+            <input type="password" id="user_mot_de_passe" name="user_mot_de_passe" required><br><br>
 
-        <input type="submit" value="S'inscrire">
-    </form>
+            <input type="submit" value="S'inscrire">
+        </form>
+    </div>
 </body>
 
 </html>
