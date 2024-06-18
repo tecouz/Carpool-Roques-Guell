@@ -17,9 +17,9 @@
     <header>
         <div class="login">
             <p>
-                <a href="">connexion</a>
+                <a href="/admin/login.php">connexion</a>
                 /
-                <a href="">inscription</a>
+                <a href="/admin/register.php">inscription</a>
             </p>
         </div>
         <h1>Bienvenue sur Carpool IFA-MNS</h1>

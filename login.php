@@ -6,7 +6,11 @@ $errorMessage = "";
 if (isset($_POST['user_mail']) && isset($_POST['user_mot_de_passe'])) {
     $errorMessage = "Identifiants invalides";
 
-    $sql = "SELECT * FROM table_user WHERE user_mail = :user_mail";
+    $sql = "SELECT u.*, r.role_name
+            FROM table_user u
+            LEFT JOIN table_role_user ru ON u.user_id = ru.user_id
+            LEFT JOIN table_role r ON ru.role_id = r.role_id
+            WHERE u.user_mail = :user_mail";
     $stmt = $db->prepare($sql);
     $stmt->bindParam(':user_mail', $_POST['user_mail']);
     $stmt->execute();
@@ -16,8 +20,17 @@ if (isset($_POST['user_mail']) && isset($_POST['user_mot_de_passe'])) {
             session_start();
             $_SESSION['user_connected'] = "ok";
             $_SESSION['user_id'] = $row["user_id"];
-            $_SESSION['user_name'] = $row["user_prenom"]; // Stockage du nom d'utilisateur dans la session
-            header("Location: index.php");
+            $_SESSION['user_name'] = $row["user_prenom"];
+
+            // Vérifier le rôle de l'utilisateur et rediriger en conséquence
+            if ($row['role_name'] == 'admin') {
+                header("Location: /admin/index.php");
+            } elseif ($row['role_name'] == 'user') {
+                header("Location: /user/index.php");
+            } else {
+                // Rediriger vers une page par défaut si l'utilisateur n'a pas de rôle spécifique
+                header("Location: /default.php");
+            }
             exit();
         }
     } else {

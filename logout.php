@@ -2,4 +2,4 @@
 $_SESSION['user_connected'] = "";
 $_SESSION['user_name'] = "";
 session_destroy();
-header("Location:/admin/login.php");
+header("Location:/login.php");

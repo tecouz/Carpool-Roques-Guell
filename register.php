@@ -14,12 +14,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Hasher le mot de passe
     $user_mot_de_passe_hash = password_hash($user_mot_de_passe, PASSWORD_DEFAULT);
 
-    // Requête SQL pour insérer les données dans la table
+    // Requête SQL pour insérer les données dans la table table_user
     $sql = "INSERT INTO table_user (user_nom, user_prenom, user_tel, user_mail, user_mot_de_passe)
-    VALUES (:user_nom, :user_prenom, :user_tel, :user_mail, :user_mot_de_passe_hash)";
-
+            VALUES (:user_nom, :user_prenom, :user_tel, :user_mail, :user_mot_de_passe_hash)";
     $stmt = $db->prepare($sql);
-
     $stmt->bindParam(':user_nom', $user_nom);
     $stmt->bindParam(':user_prenom', $user_prenom);
     $stmt->bindParam(':user_tel', $user_tel);
@@ -27,6 +25,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bindParam(':user_mot_de_passe_hash', $user_mot_de_passe_hash);
 
     if ($stmt->execute()) {
+        // Récupérer l'ID de l'utilisateur nouvellement inséré
+        $user_id = $db->lastInsertId();
+
+        // Récupérer l'ID du rôle "user" depuis la table table_role
+        $sql_role = "SELECT role_id FROM table_role WHERE role_name = 'user'";
+        $stmt_role = $db->prepare($sql_role);
+        $stmt_role->execute();
+        $role_id = $stmt_role->fetchColumn();
+
+        // Insérer l'association entre l'utilisateur et le rôle "user" dans la table table_role_user
+        $sql_role_user = "INSERT INTO table_role_user (user_id, role_id) VALUES (:user_id, :role_id)";
+        $stmt_role_user = $db->prepare($sql_role_user);
+        $stmt_role_user->bindParam(':user_id', $user_id, PDO::PARAM_INT);
+        $stmt_role_user->bindParam(':role_id', $role_id, PDO::PARAM_INT);
+        $stmt_role_user->execute();
+
         header("Location: login.php");
     } else {
         echo "Erreur: " . $stmt->errorInfo()[2];
